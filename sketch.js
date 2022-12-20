@@ -136,6 +136,19 @@ function setup() {
   button12.mousePressed(toggle12);
   button13.mousePressed(toggle13);
   button14.mousePressed(toggle14);
+  button1.position(1, 1);
+  button2.position(50, 1);
+  button3.position(85, 1);
+  button4.position(135, 1);
+  button5.position(170, 1);
+  button6.position(220, 1);
+  button7.position(270, 1);
+  button8.position(1, 30);
+  button9.position(50, 30);
+  button10.position(85, 30);
+  button11.position(135, 30);
+  button12.position(170, 30);
+  
   
   amp = new p5.Oscillator();
   vol = 0.5;
@@ -145,7 +158,7 @@ function setup() {
     button.mousePressed(iosAccess);
   }else{
     background(0, 255, 0);
-    text("is not a ios", 100, 100);
+    text("is not a ios", 150, 150);
   }
   
   r = random(0, 255);
@@ -156,6 +169,7 @@ function setup() {
 
 
 function draw() {
+  
     wave1.amp(vol, 1);
     wave2.amp(vol, 1);
     wave3.amp(vol, 1);
@@ -169,6 +183,9 @@ function draw() {
     wave11.amp(vol, 1);
     wave12.amp(vol, 1);
   
+  clear();
+  let display = touches.length + 'touches';
+  text(display, 150, 150);
   
   if (!permission) return;
   background(r, g, b);
@@ -194,6 +211,7 @@ function iosAccess(){
 
 
 function touchStarted(){
+  
   
 }
 function toggle1(){
@@ -228,7 +246,7 @@ function toggle3(){
   if (!playing3){
     wave3.start();
     // wave3.amp(vol, 1);
-    playing3 = tru3;
+    playing3 = true;
   } else{
     wave3.stop();
     // wave3.amp(0, 1);
