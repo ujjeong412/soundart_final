@@ -156,7 +156,18 @@ function setup() {
 
 
 function draw() {
-  
+    wave1.amp(vol, 1);
+    wave2.amp(vol, 1);
+    wave3.amp(vol, 1);
+    wave4.amp(vol, 1);
+    wave5.amp(vol, 1);
+    wave6.amp(vol, 1);
+    wave7.amp(vol, 1);
+    wave8.amp(vol, 1);
+    wave9.amp(vol, 1);
+    wave10.amp(vol, 1);
+    wave11.amp(vol, 1);
+    wave12.amp(vol, 1);
   
   
   if (!permission) return;
@@ -190,10 +201,11 @@ function toggle1(){
  
   if (!playing1){
     wave1.start();
-    wave1.amp(vol, 1);
+    // wave1.amp(vol, 1);
     playing1 = true;
   } else{
-    wave1.amp(0, 1);
+    wave1.stop();
+    // wave1.amp(0, 1);
     playing1 = false;
   }
 }
@@ -202,10 +214,11 @@ function toggle2(){
  
   if (!playing2){
     wave2.start();
-    wave2.amp(vol, 1);
+    // wave2.amp(vol, 1);
     playing2 = true;
   } else{
-    wave2.amp(0, 1);
+    wave2.stop();
+    // wave2.amp(0, 1);
     playing2 = false;
   }
 }
@@ -214,10 +227,11 @@ function toggle3(){
  
   if (!playing3){
     wave3.start();
-    wave3.amp(vol, 1);
-    playing3 = true;
+    // wave3.amp(vol, 1);
+    playing3 = tru3;
   } else{
-    wave3.amp(0, 1);
+    wave3.stop();
+    // wave3.amp(0, 1);
     playing3 = false;
   }
 }
@@ -226,10 +240,11 @@ function toggle4(){
  
   if (!playing4){
     wave4.start();
-    wave4.amp(vol, 1);
+    // wave4.amp(vol, 1);
     playing4 = true;
   } else{
-    wave4.amp(0, 1);
+    wave4.stop();
+    // wave4.amp(0, 1);
     playing4 = false;
   }
 }
@@ -238,10 +253,11 @@ function toggle5(){
  
   if (!playing5){
     wave5.start();
-    wave5.amp(vol, 1);
+    // wave5.amp(vol, 1);
     playing5 = true;
   } else{
-    wave5.amp(0, 1);
+    wave5.stop();
+    // wave5.amp(0, 1);
     playing5 = false;
   }
 }
@@ -250,10 +266,11 @@ function toggle6(){
  
   if (!playing6){
     wave6.start();
-    wave6.amp(vol, 1);
+    // wave6.amp(vol, 1);
     playing6 = true;
   } else{
-    wave6.amp(0, 1);
+    wave6.stop();
+    // wave6.amp(0, 1);
     playing6 = false;
   }
 }
@@ -262,10 +279,11 @@ function toggle7(){
  
   if (!playing7){
     wave7.start();
-    wave7.amp(vol, 1);
+    // wave7.amp(vol, 1);
     playing7 = true;
   } else{
-    wave7.amp(0, 1);
+    wave7.stop();
+    // wave7.amp(0, 1);
     playing7 = false;
   }
 }
@@ -275,10 +293,11 @@ function toggle8(){
  
   if (!playing8){
     wave8.start();
-    wave8.amp(vol, 1);
+    // wave8.amp(vol, 1);
     playing8 = true;
   } else{
-    wave8.amp(0, 1);
+    wave8.stop();
+    // wave8.amp(0, 1);
     playing8 = false;
   }
 }
@@ -287,10 +306,11 @@ function toggle9(){
  
   if (!playing9){
     wave9.start();
-    wave9.amp(vol, 1);
+    // wave9.amp(vol, 1);
     playing9 = true;
   } else{
-    wave9.amp(0, 1);
+    wave9.stop();
+    // wave9.amp(0, 1);
     playing9 = false;
   }
 }
@@ -299,10 +319,11 @@ function toggle10(){
  
   if (!playing10){
     wave10.start();
-    wave10.amp(vol, 1);
+    // wave10.amp(vol, 1);
     playing10 = true;
   } else{
-    wave10.amp(0, 1);
+    wave10.stop();
+    // wave10.amp(0, 1);
     playing10 = false;
   }
 }
@@ -311,10 +332,11 @@ function toggle11(){
  
   if (!playing11){
     wave11.start();
-    wave11.amp(vol, 1);
+    // wave11.amp(vol, 1);
     playing11 = true;
   } else{
-    wave11.amp(0, 1);
+    wave11.stop();
+    // wave11.amp(0, 1);
     playing11 = false;
   }
 }
@@ -323,10 +345,11 @@ function toggle12(){
  
   if (!playing12){
     wave12.start();
-    wave12.amp(vol, 1);
+    // wave12.amp(vol, 1);
     playing12 = true;
   } else{
-    wave12.amp(0, 1);
+    wave12.stop();
+    // wave12.amp(0, 1);
     playing12 = false;
   }
 }
@@ -335,34 +358,34 @@ function toggle13(){
     if(vol >= 1){
         vol = 1;
     }
-    wave1.amp(vol);
-    wave2.amp(vol);
-    wave3.amp(vol);
-    wave4.amp(vol);
-    wave5.amp(vol);
-    wave6.amp(vol);
-    wave7.amp(vol);
-    wave8.amp(vol);
-    wave9.amp(vol);
-    wave10.amp(vol);
-    wave11.amp(vol);
-    wave12.amp(vol);
+    // wave1.amp(vol);
+    // wave2.amp(vol);
+    // wave3.amp(vol);
+    // wave4.amp(vol);
+    // wave5.amp(vol);
+    // wave6.amp(vol);
+    // wave7.amp(vol);
+    // wave8.amp(vol);
+    // wave9.amp(vol);
+    // wave10.amp(vol);
+    // wave11.amp(vol);
+    // wave12.amp(vol);
  }
 function toggle14(){
     vol = vol - 0.1;
     if(vol <= 0){
         vol = 0;
     }
-    wave1.amp(vol);
-    wave2.amp(vol);
-    wave3.amp(vol);
-    wave4.amp(vol);
-    wave5.amp(vol);
-    wave6.amp(vol);
-    wave7.amp(vol);
-    wave8.amp(vol);
-    wave9.amp(vol);
-    wave10.amp(vol);
-    wave11.amp(vol);
-    wave12.amp(vol);
+    // wave1.amp(vol);
+    // wave2.amp(vol);
+    // wave3.amp(vol);
+    // wave4.amp(vol);
+    // wave5.amp(vol);
+    // wave6.amp(vol);
+    // wave7.amp(vol);
+    // wave8.amp(vol);
+    // wave9.amp(vol);
+    // wave10.amp(vol);
+    // wave11.amp(vol);
+    // wave12.amp(vol);
  }
